@@ -25,7 +25,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
   render() {
     if (this.state.hasError) {
       return (
-        <div style={{ padding: '20px', textAlign: 'center' }}>
+        <div style={{ padding: '20px', textAlign: 'center', color: 'white' }}>
           <h1>Something went wrong</h1>
           <p>Error: {this.state.error?.message || 'Unknown error'}</p>
           <p>Please refresh the page or try again later</p>
