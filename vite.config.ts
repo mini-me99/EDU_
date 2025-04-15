@@ -7,7 +7,8 @@ export default defineConfig({
   base: '/EDU_/',
   build: {
     outDir: 'dist',
-    sourcemap: true,
+    sourcemap: false,
+    minify: 'terser',
     rollupOptions: {
       output: {
         manualChunks: {
